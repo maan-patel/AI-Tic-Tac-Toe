@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <h1 style="text-align:center;">AI Tic Tac Toe with the Minimax Algorithm</h1>
+  <h4 class="text-center">By: Maan Patel</h4>
+  <script async src="minimax.js"></script>
+  <script async src="sketch.js"></script>
+  <!-- <script src="image.js"></script> -->
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-8">
+        <h2>Explanation</h2>
+        <p>The AI Tic Tac Toe game below uses the MiniMax Algorithm and allows you to face your most competitive/
+          smartest
+          opponent! The logic behind this algorithm is shown on the image on right. As you can see, the diagrams outline
+          scenarios where
+          the number of possibilites are either <b> minimized</b> or <b> maximized</b>. As you can see, the diagram is a
+          Data Sctructure - <b>tree</b>. </p>
+        <p>We initially set a range from (-1,0, 1) that will determine a Loss, Tie, or Win, respectively. We have set
+          the computer to be
+          X. A node's siblings represents the move for either X or O player. The Computer needs to determine what the
+          minimization for X and Maximization for O given that it wants to win each scenario (+1) and avoid the loss
+          scenarios (-1). We then use recursion to take the Maximization/ Minimization at a node and it's siblings where
+          we want the computer to take either the shortest or the longest route. </p>
+        <h3 class="text-center">Play Here!</h3>
+        <main><canvas id="defaultCanvas0" class="p5Canvas" width="400" height="400"
+            style="width: 400px; height: 400px;"></canvas></main>
+      </div>
+      <div class="col-3">
+        <img src="https://i.pinimg.com/564x/54/b0/87/54b087f67e21e7bf83e4f495f46de693.jpg"
+          style="transform:rotate(270deg); vertical-align: bottom;">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
